@@ -16,12 +16,12 @@ default: &default
   hostname: ryde.ccbdusdwjuit.us-east-1.rds.amazonaws.com
   port: 3306
   username: rydeuser
-  password:
+  password: ryderyde
   socket: /tmp/mysql.sock
 
 development:
   <<: *default
-  database: Ryde_development
+  database: RYDE
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
