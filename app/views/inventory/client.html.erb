@@ -1,0 +1,72 @@
+<div>
+
+  <div class="form-group">
+
+    <div class="form-group">
+      <p>Make</p>
+      <select class="form-control">
+        <option>Toyota</option>
+        <option>Honda</option>
+        <option>Ford</option>
+      </select>
+    </div>
+    <br/>
+
+    <p>Type</p>
+
+    <div class="form-group">
+      <title>Type</title>
+      <select class="form-control">
+        <option>Sedan</option>
+        <option>SUV</option>
+      </select>
+    </div>
+    <br/>
+    Price:
+    <div class="form-group">
+
+      <select class="form-control">
+        <option>100 - 150</option>
+        <option>150 - 200</option>
+      </select>
+    </div>
+
+  </div>
+
+
+  <table class="table table-hover table-bordered table-striped table-responsive table-condensed">
+    <tr>
+      <th>VIN</th>
+      <th>Model</th>
+      <th>Make</th>
+      <th>Type</th>
+      <th>Year</th>
+      <th>Color</th>
+      <th>Used</th>
+      <th>Miles</th>
+      <th>KBBValue</th>
+      <th>Rental Price</th>
+      <th>MPG</th>
+      <th>SellerID</th>
+    </tr>
+
+
+    <% @inventory.each do |car| %>
+        <tr>
+          <td><%= car.VIN %></td>
+          <td><%= car.MODEL %></td>
+          <td><%= car.MAKE %></td>
+          <td><%= car.TYPE %></td>
+          <td><%= car.YEAR %></td>
+          <td><%= car.COLOR %></td>
+          <td><%= car.USED %></td>
+          <td><%= car.MILES %></td>
+          <td><%= car.KBBVALUE %></td>
+          <td><%= car.RENTALPRICE %></td>
+          <td><%= car.MPG %></td>
+          <td><%= car.SELLERID %></td>
+        </tr>
+    <% end %>
+  </table>
+
+</div>

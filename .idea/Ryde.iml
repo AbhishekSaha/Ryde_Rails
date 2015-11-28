@@ -10,38 +10,14 @@
     </facet>
   </component>
   <component name="ModuleRunConfigurationManager">
-    <configuration default="false" name="test: Ryde" type="RakeRunConfigurationType" factoryName="Rake">
+    <configuration default="false" name="Development: Ryde" type="RailsRunConfigurationType" factoryName="Rails">
+      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
       <module name="Ryde" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
-      <envs>
-        <env name="RAILS_ENV" value="test" />
-      </envs>
-      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
-      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
-      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
-        <COVERAGE_PATTERN ENABLED="true">
-          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
-        </COVERAGE_PATTERN>
-      </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="spec: Ryde" type="RakeRunConfigurationType" factoryName="Rake">
-      <module name="Ryde" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
@@ -50,12 +26,13 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
-      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
+      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
     <configuration default="false" name="Production: Ryde" type="RailsRunConfigurationType" factoryName="Rails">
@@ -83,14 +60,13 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
       <method />
     </configuration>
-    <configuration default="false" name="Development: Ryde" type="RailsRunConfigurationType" factoryName="Rails">
-      <predefined_log_file id="RUBY_RAILS_SERVER" enabled="true" />
+    <configuration default="false" name="spec: Ryde" type="RakeRunConfigurationType" factoryName="Rake">
       <module name="Ryde" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
       <envs />
       <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
       <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
@@ -99,13 +75,37 @@
           <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
         </COVERAGE_PATTERN>
       </EXTENSION>
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="SCRIPT_ARGS" VALUE="" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="PORT" VALUE="3000" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="IP" VALUE="0.0.0.0" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="DUMMY_APP" VALUE="test/dummy" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
-      <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="spec" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":rspec " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="test: Ryde" type="RakeRunConfigurationType" factoryName="Rake">
+      <module name="Ryde" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RUBY_ARGS" VALUE="-e $stdout.sync=true;$stderr.sync=true;load($0=ARGV.shift)" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="WORK DIR" VALUE="$MODULE_DIR$" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="SHOULD_USE_SDK" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="ALTERN_SDK_NAME" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="myPassParentEnvs" VALUE="true" />
+      <envs>
+        <env name="RAILS_ENV" value="test" />
+      </envs>
+      <EXTENSION ID="BundlerRunConfigurationExtension" bundleExecEnabled="false" />
+      <EXTENSION ID="JRubyRunConfigurationExtension" NailgunExecEnabled="false" />
+      <EXTENSION ID="RubyCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" track_test_folders="true" runner="rcov">
+        <COVERAGE_PATTERN ENABLED="true">
+          <PATTERN REGEXPS="/.rvm/" INCLUDED="false" />
+        </COVERAGE_PATTERN>
+      </EXTENSION>
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_NAME" VALUE="test" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ARGS" VALUE="" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_ATTACHED_TEST_FRAMEWORKS" VALUE=":test_unit " />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_TRACE" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_DRYRUN" VALUE="false" />
+      <RAKE_RUN_CONFIG_SETTINGS_ID NAME="RAKE_TASK_OPTION_PREREQS" VALUE="false" />
       <method />
     </configuration>
   </component>
@@ -122,7 +122,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module-library">
-      <library name="actionmailer (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/actionmailer-4.2.4) [path][gem]">
+      <library name="actionmailer (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/actionmailer-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionmailer-4.2.4/lib" />
         </CLASSES>
@@ -132,7 +132,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="actionpack (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/actionpack-4.2.4) [path][gem]">
+      <library name="actionpack (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/actionpack-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionpack-4.2.4/lib" />
         </CLASSES>
@@ -142,7 +142,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="actionview (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/actionview-4.2.4) [path][gem]">
+      <library name="actionview (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/actionview-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/actionview-4.2.4/lib" />
         </CLASSES>
@@ -152,7 +152,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="activejob (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/activejob-4.2.4) [path][gem]">
+      <library name="activejob (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/activejob-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/activejob-4.2.4/lib" />
         </CLASSES>
@@ -162,7 +162,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="activemodel (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/activemodel-4.2.4) [path][gem]">
+      <library name="activemodel (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/activemodel-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/activemodel-4.2.4/lib" />
         </CLASSES>
@@ -172,7 +172,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="activerecord (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/activerecord-4.2.4) [path][gem]">
+      <library name="activerecord (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/activerecord-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/activerecord-4.2.4/lib" />
         </CLASSES>
@@ -182,7 +182,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="activesupport (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/activesupport-4.2.4) [path][gem]">
+      <library name="activesupport (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/activesupport-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/activesupport-4.2.4/lib" />
         </CLASSES>
@@ -192,7 +192,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="arel (vbundled(6.0.3), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/arel-6.0.3) [path][gem]">
+      <library name="arel (vbundled(6.0.3), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/arel-6.0.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/arel-6.0.3/lib" />
         </CLASSES>
@@ -202,7 +202,19 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="binding_of_caller (vbundled(0.7.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/binding_of_caller-0.7.2) [path][gem]">
+      <library name="autoprefixer-rails (vbundled(6.1.1), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/autoprefixer-rails-6.1.1) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/autoprefixer-rails-6.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/autoprefixer-rails-6.1.1/vendor" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/autoprefixer-rails-6.1.1/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/autoprefixer-rails-6.1.1/vendor" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="binding_of_caller (vbundled(0.7.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/binding_of_caller-0.7.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/binding_of_caller-0.7.2/ext" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/binding_of_caller-0.7.2/lib" />
@@ -214,7 +226,23 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="builder (vbundled(3.2.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/builder-3.2.2) [path][gem]">
+      <library name="bootstrap-sass (vbundled(3.2.0.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/bootstrap-sass-3.2.0.2) [path][gem]">
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.2/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.2/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.2/templates" />
+        </CLASSES>
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.2/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.2/tasks" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.2/assets" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/bootstrap-sass-3.2.0.2/templates" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="builder (vbundled(3.2.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/builder-3.2.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/builder-3.2.2/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/builder-3.2.2/rakelib" />
@@ -226,7 +254,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="byebug (vbundled(8.1.0), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/byebug-8.1.0) [path][gem]">
+      <library name="byebug (vbundled(8.1.0), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/byebug-8.1.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/byebug-8.1.0/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/byebug-8.1.0/ext" />
@@ -240,7 +268,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="coffee-rails (vbundled(4.1.0), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/coffee-rails-4.1.0) [path][gem]">
+      <library name="coffee-rails (vbundled(4.1.0), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/coffee-rails-4.1.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/coffee-rails-4.1.0/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/coffee-rails-4.1.0/gemfiles" />
@@ -252,7 +280,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="coffee-script (vbundled(2.4.1), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/coffee-script-2.4.1) [path][gem]">
+      <library name="coffee-script (vbundled(2.4.1), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/coffee-script-2.4.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/coffee-script-2.4.1/lib" />
         </CLASSES>
@@ -262,7 +290,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="coffee-script-source (vbundled(1.9.1.1), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/coffee-script-source-1.9.1.1) [path][gem]">
+      <library name="coffee-script-source (vbundled(1.9.1.1), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/coffee-script-source-1.9.1.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/coffee-script-source-1.9.1.1/lib" />
         </CLASSES>
@@ -272,7 +300,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="debug_inspector (vbundled(0.0.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/debug_inspector-0.0.2) [path][gem]">
+      <library name="debug_inspector (vbundled(0.0.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/debug_inspector-0.0.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/debug_inspector-0.0.2/ext" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/debug_inspector-0.0.2/lib" />
@@ -284,7 +312,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="erubis (vbundled(2.7.0), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/erubis-2.7.0) [path][gem]">
+      <library name="erubis (vbundled(2.7.0), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/erubis-2.7.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/erubis-2.7.0/lib" />
@@ -302,7 +330,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="execjs (vbundled(2.6.0), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/execjs-2.6.0) [path][gem]">
+      <library name="execjs (vbundled(2.6.0), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/execjs-2.6.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/execjs-2.6.0/lib" />
         </CLASSES>
@@ -312,7 +340,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="globalid (vbundled(0.3.6), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/globalid-0.3.6) [path][gem]">
+      <library name="globalid (vbundled(0.3.6), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/globalid-0.3.6) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/globalid-0.3.6/lib" />
         </CLASSES>
@@ -322,7 +350,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="i18n (vbundled(0.7.0), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/i18n-0.7.0) [path][gem]">
+      <library name="i18n (vbundled(0.7.0), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/i18n-0.7.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/i18n-0.7.0/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/i18n-0.7.0/gemfiles" />
@@ -334,7 +362,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="jbuilder (vbundled(2.3.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/jbuilder-2.3.2) [path][gem]">
+      <library name="jbuilder (vbundled(2.3.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/jbuilder-2.3.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/jbuilder-2.3.2/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/jbuilder-2.3.2/gemfiles" />
@@ -346,7 +374,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="jquery-rails (vbundled(4.0.5), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/jquery-rails-4.0.5) [path][gem]">
+      <library name="jquery-rails (vbundled(4.0.5), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/jquery-rails-4.0.5) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/jquery-rails-4.0.5/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/jquery-rails-4.0.5/vendor" />
@@ -358,7 +386,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="json (vbundled(1.8.3), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/json-1.8.3) [path][gem]">
+      <library name="json (vbundled(1.8.3), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/json-1.8.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/ext" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/json-1.8.3/lib" />
@@ -380,7 +408,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="loofah (vbundled(2.0.3), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/loofah-2.0.3) [path][gem]">
+      <library name="loofah (vbundled(2.0.3), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/loofah-2.0.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/loofah-2.0.3/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/loofah-2.0.3/benchmark" />
@@ -392,7 +420,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="mail (vbundled(2.6.3), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/mail-2.6.3) [path][gem]">
+      <library name="mail (vbundled(2.6.3), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/mail-2.6.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/mail-2.6.3/lib" />
         </CLASSES>
@@ -402,7 +430,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="mime-types (vbundled(2.6.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/mime-types-2.6.2) [path][gem]">
+      <library name="mime-types (vbundled(2.6.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/mime-types-2.6.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.6.2/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/mime-types-2.6.2/data" />
@@ -416,7 +444,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="mini_portile (vbundled(0.6.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/mini_portile-0.6.2) [path][gem]">
+      <library name="mini_portile (vbundled(0.6.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/mini_portile-0.6.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/mini_portile-0.6.2/lib" />
         </CLASSES>
@@ -426,7 +454,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="minitest (vbundled(5.8.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/minitest-5.8.2) [path][gem]">
+      <library name="minitest (vbundled(5.8.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/minitest-5.8.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/minitest-5.8.2/lib" />
         </CLASSES>
@@ -436,7 +464,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="multi_json (vbundled(1.11.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/multi_json-1.11.2) [path][gem]">
+      <library name="multi_json (vbundled(1.11.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/multi_json-1.11.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/multi_json-1.11.2/lib" />
         </CLASSES>
@@ -446,21 +474,21 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="mysql2 (vbundled(0.4.1), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/mysql2-0.4.1) [path][gem]">
+      <library name="mysql2 (vbundled(0.3.20), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/mysql2-0.3.20) [path][gem]">
         <CLASSES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.4.1/ext" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.4.1/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.4.1/support" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.3.20/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.3.20/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.3.20/support" />
         </CLASSES>
         <SOURCES>
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.4.1/ext" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.4.1/lib" />
-          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.4.1/support" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.3.20/ext" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.3.20/lib" />
+          <root url="file://$MODULE_DIR$/vendor/bundle/gems/mysql2-0.3.20/support" />
         </SOURCES>
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="nokogiri (vbundled(1.6.6.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/nokogiri-1.6.6.2) [path][gem]">
+      <library name="nokogiri (vbundled(1.6.6.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/nokogiri-1.6.6.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.6.2/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/nokogiri-1.6.6.2/ext" />
@@ -478,7 +506,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rack (vbundled(1.6.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/rack-1.6.4) [path][gem]">
+      <library name="rack (vbundled(1.6.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/rack-1.6.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-1.6.4/lib" />
@@ -494,7 +522,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rack-test (vbundled(0.6.3), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/rack-test-0.6.3) [path][gem]">
+      <library name="rack-test (vbundled(0.6.3), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/rack-test-0.6.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rack-test-0.6.3/lib" />
         </CLASSES>
@@ -504,7 +532,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rails (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/rails-4.2.4) [path][gem]">
+      <library name="rails (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/rails-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-4.2.4/guides" />
         </CLASSES>
@@ -514,7 +542,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rails-deprecated_sanitizer (vbundled(1.0.3), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/rails-deprecated_sanitizer-1.0.3) [path][gem]">
+      <library name="rails-deprecated_sanitizer (vbundled(1.0.3), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/rails-deprecated_sanitizer-1.0.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-deprecated_sanitizer-1.0.3/lib" />
         </CLASSES>
@@ -524,7 +552,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rails-dom-testing (vbundled(1.0.7), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/rails-dom-testing-1.0.7) [path][gem]">
+      <library name="rails-dom-testing (vbundled(1.0.7), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/rails-dom-testing-1.0.7) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-dom-testing-1.0.7/lib" />
         </CLASSES>
@@ -534,7 +562,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="rails-html-sanitizer (vbundled(1.0.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/rails-html-sanitizer-1.0.2) [path][gem]">
+      <library name="rails-html-sanitizer (vbundled(1.0.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/rails-html-sanitizer-1.0.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/rails-html-sanitizer-1.0.2/lib" />
         </CLASSES>
@@ -544,7 +572,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="railties (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/railties-4.2.4) [path][gem]">
+      <library name="railties (vbundled(4.2.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/railties-4.2.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/railties-4.2.4/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/railties-4.2.4/lib" />
@@ -556,7 +584,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="sass (vbundled(3.4.19), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/sass-3.4.19) [path][gem]">
+      <library name="sass (vbundled(3.4.19), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/sass-3.4.19) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/sass-3.4.19/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/sass-3.4.19/lib" />
@@ -574,7 +602,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="sass-rails (vbundled(5.0.4), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/sass-rails-5.0.4) [path][gem]">
+      <library name="sass-rails (vbundled(5.0.4), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/sass-rails-5.0.4) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/sass-rails-5.0.4/lib" />
         </CLASSES>
@@ -584,7 +612,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="sdoc (vbundled(0.4.1), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/sdoc-0.4.1) [path][gem]">
+      <library name="sdoc (vbundled(0.4.1), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/sdoc-0.4.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/sdoc-0.4.1/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/sdoc-0.4.1/lib" />
@@ -596,7 +624,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="spring (vbundled(1.4.0), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/spring-1.4.0) [path][gem]">
+      <library name="spring (vbundled(1.4.0), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/spring-1.4.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/spring-1.4.0/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/spring-1.4.0/lib" />
@@ -608,7 +636,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="sprockets (vbundled(3.4.0), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/sprockets-3.4.0) [path][gem]">
+      <library name="sprockets (vbundled(3.4.0), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/sprockets-3.4.0) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-3.4.0/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-3.4.0/lib" />
@@ -620,7 +648,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="sprockets-rails (vbundled(2.3.3), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/sprockets-rails-2.3.3) [path][gem]">
+      <library name="sprockets-rails (vbundled(2.3.3), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/sprockets-rails-2.3.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/sprockets-rails-2.3.3/lib" />
         </CLASSES>
@@ -630,7 +658,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="thor (vbundled(0.19.1), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/thor-0.19.1) [path][gem]">
+      <library name="thor (vbundled(0.19.1), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/thor-0.19.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/thor-0.19.1/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/thor-0.19.1/lib" />
@@ -642,7 +670,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="thread_safe (vbundled(0.3.5), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/thread_safe-0.3.5) [path][gem]">
+      <library name="thread_safe (vbundled(0.3.5), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/thread_safe-0.3.5) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/ext" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/thread_safe-0.3.5/lib" />
@@ -658,7 +686,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="tilt (vbundled(2.0.1), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/tilt-2.0.1) [path][gem]">
+      <library name="tilt (vbundled(2.0.1), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/tilt-2.0.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-2.0.1/bin" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/tilt-2.0.1/lib" />
@@ -670,7 +698,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="turbolinks (vbundled(2.5.3), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/turbolinks-2.5.3) [path][gem]">
+      <library name="turbolinks (vbundled(2.5.3), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/turbolinks-2.5.3) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/turbolinks-2.5.3/lib" />
         </CLASSES>
@@ -680,7 +708,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="tzinfo (vbundled(1.2.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/tzinfo-1.2.2) [path][gem]">
+      <library name="tzinfo (vbundled(1.2.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/tzinfo-1.2.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/tzinfo-1.2.2/lib" />
         </CLASSES>
@@ -690,7 +718,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="uglifier (vbundled(2.7.2), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/uglifier-2.7.2) [path][gem]">
+      <library name="uglifier (vbundled(2.7.2), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/uglifier-2.7.2) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/uglifier-2.7.2/lib" />
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/uglifier-2.7.2/gemfiles" />
@@ -702,7 +730,7 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="web-console (vbundled(2.2.1), /Users/abhisheksaha/RubymineProjects/Ryde/vendor/bundle/gems/web-console-2.2.1) [path][gem]">
+      <library name="web-console (vbundled(2.2.1), /Users/abhisheksaha/RubymineProjects/Ryde_Rails/vendor/bundle/gems/web-console-2.2.1) [path][gem]">
         <CLASSES>
           <root url="file://$MODULE_DIR$/vendor/bundle/gems/web-console-2.2.1/lib" />
         </CLASSES>
