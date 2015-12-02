@@ -56,4 +56,6 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   get 'inventory/client'
+  get 'welcome_page/welcome'
+  root 'welcome_page#welcome'
 end
