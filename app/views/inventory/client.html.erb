@@ -1,6 +1,7 @@
 
-
-  <%= form_tag( :controller => 'inventory', :action => "client", :method => "get" ) do%>
+/*TODO: fix forms
+*/
+<%= form_tag( :controller => 'inventory', :action => "query", :method => "get", :class=>"form-inline" ) do%>
     <div class="form-group">
       <%= label_tag("Make") %>
       <%= select_tag("type", '<option>Toyota</option><option>Honda</option><option>Ford</option>', :class=>"form-control")  %>
@@ -18,6 +19,8 @@
       <%= label_tag(:price, "Price")%>
       <%= select_tag("price", '<option>100 - 150</option><option>150 - 200</option>', :class=>"form-control")  %>
     </div>
+
+      <%= submit_tag("Search") %>
 
   <% end %>
 

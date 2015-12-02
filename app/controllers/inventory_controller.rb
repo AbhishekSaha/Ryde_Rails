@@ -6,4 +6,9 @@ class InventoryController < ApplicationController
     @inventory = Inventory.all
   end
 
+  def query
+    render 'client'
+    @inventory = Inventory.first
+  end
+
 end

@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -56,7 +56,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  get 'inventory/client'
+  get ':controller(/:action(/:id))'
   get 'welcome_page/welcome'
   root 'welcome_page#welcome'
 end
