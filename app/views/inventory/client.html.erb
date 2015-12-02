@@ -1,6 +1,6 @@
 
 
-  <%= form_tag( :controller => 'inventory', action => "query", :method => "get", ) do%>
+  <%= form_tag( :controller => 'inventory', :action => "client", :method => "get" ) do%>
     <div class="form-group">
       <%= label_tag("Make") %>
       <%= select_tag("type", '<option>Toyota</option><option>Honda</option><option>Ford</option>', :class=>"form-control")  %>
