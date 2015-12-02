@@ -1,6 +1,6 @@
 branch-defaults:
   master:
-    environment: null
+    environment: ryde-rails-env
 global:
   application_name: Rails_Ryde
   default_ec2_keyname: aws-eb
