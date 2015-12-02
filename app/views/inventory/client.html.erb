@@ -1,37 +1,26 @@
-<div>
 
-  <div class="form-group">
 
+  <%= form_tag( :controller => 'inventory', action => "query", :method => "get", ) do%>
     <div class="form-group">
-      <p>Make</p>
-      <select class="form-control">
-        <option>Toyota</option>
-        <option>Honda</option>
-        <option>Ford</option>
-      </select>
+      <%= label_tag("Make") %>
+      <%= select_tag("type", '<option>Toyota</option><option>Honda</option><option>Ford</option>', :class=>"form-control")  %>
     </div>
     <br/>
 
-    <p>Type</p>
 
     <div class="form-group">
-      <title>Type</title>
-      <select class="form-control">
-        <option>Sedan</option>
-        <option>SUV</option>
-      </select>
+      <%= label_tag(:type, "Type")%>
+      <%= select_tag("type", '<option>Sedan</option><option>SUV</option>', :class=>"form-control")  %>
     </div>
     <br/>
-    Price:
-    <div class="form-group">
 
-      <select class="form-control">
-        <option>100 - 150</option>
-        <option>150 - 200</option>
-      </select>
+    <div class="form-group">
+      <%= label_tag(:price, "Price")%>
+      <%= select_tag("price", '<option>100 - 150</option><option>150 - 200</option>', :class=>"form-control")  %>
     </div>
 
-  </div>
+  <% end %>
+
 
 
   <table class="table table-hover table-bordered table-striped table-responsive table-condensed">
