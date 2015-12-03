@@ -1,3 +1,3 @@
 class Inventory < ActiveRecord::Base
-  self.table_name = "INVENTORY"
+  has_one :caroption, foreign_key: "VIN"
 end

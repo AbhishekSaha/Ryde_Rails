@@ -1,26 +1,38 @@
 
 /*TODO: fix forms
 */
-<%= form_tag( :controller => 'inventory', :action => "query", :method => "get", :class=>"form-inline" ) do%>
+<%= form_tag({controller: "inventory", action: "client"}, method: "get", class: "form-inline", remote: false) do %>
     <div class="form-group">
       <%= label_tag("Make") %>
-      <%= select_tag("type", '<option>Toyota</option><option>Honda</option><option>Ford</option>', :class=>"form-control")  %>
+      <%= select_tag("make", '<option>Toyota</option><option>Honda</option><option>Ford</option>'.html_safe, :class => "form-control") %>
     </div>
     <br/>
 
-
     <div class="form-group">
       <%= label_tag(:type, "Type")%>
-      <%= select_tag("type", '<option>Sedan</option><option>SUV</option>', :class=>"form-control")  %>
+      <%= select_tag("type", '<option>Sedan</option><option>SUV</option>'.html_safe, :class => "form-control") %>
     </div>
     <br/>
 
     <div class="form-group">
       <%= label_tag(:price, "Price")%>
-      <%= select_tag("price", '<option>100 - 150</option><option>150 - 200</option>', :class=>"form-control")  %>
+      <%= select_tag("price", '<option>100 - 150</option><option>150 - 200</option>'.html_safe, :class => "form-control") %>
     </div>
 
+    <div class="form-horizontal">
+      <%= label_tag("Optional:") %> &nbsp; &nbsp;
+      <%= label_tag(:leather, "Leather Seats") %>
+      <%= check_box_tag(:leather) %> &nbsp; &nbsp;
+      <%= label_tag(:fourwheeldrive, "Four Wheel Drive") %>
+      <%= check_box_tag(:fourwheeldrive) %> &nbsp; &nbsp;
+      <%= label_tag(:foglights, "Fog Lights") %>
+      <%= check_box_tag(:foglights) %>&nbsp; &nbsp;
+      <%= label_tag(:surround, "Surround Sound") %>
+      <%= check_box_tag(:surround) %>&nbsp; &nbsp;
+      <%= label_tag(:dvd, "DVD Player") %>
+      <%= check_box_tag(:dvd) %>&nbsp; &nbsp;
       <%= submit_tag("Search") %>
+    </div>
 
   <% end %>
 
@@ -28,35 +40,27 @@
 
   <table class="table table-hover table-bordered table-striped table-responsive table-condensed">
     <tr>
-      <th>VIN</th>
+      <th>Rental Price</th>
       <th>Model</th>
       <th>Make</th>
       <th>Type</th>
       <th>Year</th>
       <th>Color</th>
       <th>Used</th>
-      <th>Miles</th>
-      <th>KBBValue</th>
-      <th>Rental Price</th>
-      <th>MPG</th>
-      <th>SellerID</th>
+      <th>Miles Per Gallon</th>
     </tr>
 
 
-    <% @inventory.each do |car| %>
+    <% @inventorys.each do |car| %>
         <tr>
-          <td><%= car.VIN %></td>
+          <td><%= car.RENTALPRICE %></td>
           <td><%= car.MODEL %></td>
           <td><%= car.MAKE %></td>
           <td><%= car.TYPE %></td>
           <td><%= car.YEAR %></td>
           <td><%= car.COLOR %></td>
           <td><%= car.USED %></td>
-          <td><%= car.MILES %></td>
-          <td><%= car.KBBVALUE %></td>
-          <td><%= car.RENTALPRICE %></td>
           <td><%= car.MPG %></td>
-          <td><%= car.SELLERID %></td>
         </tr>
     <% end %>
   </table>
