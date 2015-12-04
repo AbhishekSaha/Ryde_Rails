@@ -1,6 +1,3 @@
-
-/*TODO: fix forms
-*/
 <%= form_tag({controller: "inventory", action: "client"}, method: "get", class: "form-inline", remote: false) do %>
     <div class="form-group">
       <%= label_tag("Make") %>
@@ -13,7 +10,7 @@
       <%= select_tag("type", '<option>Sedan</option><option>SUV</option>'.html_safe, :class => "form-control") %>
     </div>
     <br/>
-    
+
 
     <div class="form-horizontal">
       <%= label_tag("Optional:") %> &nbsp; &nbsp;
