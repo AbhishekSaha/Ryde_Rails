@@ -14167,3 +14167,326 @@ Started GET "/assets/welcome_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f
 
 
 Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-12-03 23:05:09 -0500
+
+
+Started GET "/inventory/client.html" for ::1 at 2015-12-04 12:47:02 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (16.9ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by InventoryController#client as HTML
+  [1m[35mInventory Load (60.1ms)[0m  SELECT `inventories`.* FROM `inventories`
+  Rendered inventory/client.html.erb within layouts/application (222.1ms)
+Completed 200 OK in 606ms (Views: 482.6ms | ActiveRecord: 110.4ms)
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Ford&type=SUV&commit=Search" for ::1 at 2015-12-04 12:47:43 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Ford", "type"=>"SUV", "commit"=>"Search"}
+  [1m[36mInventory Load (18.1ms)[0m  [1mSELECT `inventories`.* FROM `inventories` INNER JOIN caroptions ON inventories.VIN = caroptions.VIN WHERE (1=0) AND `inventories`.`make` = 'Ford' AND `inventories`.`type` = 'SUV'[0m
+  Rendered inventory/client.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 185ms (Views: 153.6ms | ActiveRecord: 18.1ms)
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Toyota&type=Sedan&commit=Search" for ::1 at 2015-12-04 12:49:12 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Toyota", "type"=>"Sedan", "commit"=>"Search"}
+  [1m[35mInventory Load (15.9ms)[0m  SELECT `inventories`.* FROM `inventories` INNER JOIN caroptions ON inventories.VIN = caroptions.VIN WHERE (1=0) AND `inventories`.`make` = 'Toyota' AND `inventories`.`type` = 'Sedan'
+  Rendered inventory/client.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 149ms (Views: 132.5ms | ActiveRecord: 15.9ms)
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Toyota&type=Sedan&commit=Search" for ::1 at 2015-12-04 12:51:31 -0500
+
+SyntaxError (/Users/abhisheksaha/RubymineProjects/Ryde_Rails/app/controllers/inventory_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/inventory_controller.rb:46: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (67.1ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.1ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (141.7ms)
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Toyota&type=Sedan&commit=Search" for ::1 at 2015-12-04 12:51:43 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Toyota", "type"=>"Sedan", "commit"=>"Search"}
+  [1m[36mInventory Load (17.1ms)[0m  [1mSELECT `inventories`.* FROM `inventories` INNER JOIN caroptions ON inventories.VIN = caroptions.VIN WHERE (1=0) AND `inventories`.`make` = 'Toyota' AND `inventories`.`type` = 'Sedan'[0m
+  Rendered inventory/client.html.erb within layouts/application (62.3ms)
+Completed 200 OK in 184ms (Views: 126.3ms | ActiveRecord: 51.8ms)
+
+
+Started GET "/assets/welcome_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/application.self-9faddc8aba49dddfbb7fca3ce3251f9404ce506c9101a35969c92f5d85c52795.css?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/welcome_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-12-04 12:51:44 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Toyota&type=Sedan&foglights=1&commit=Search" for ::1 at 2015-12-04 12:51:48 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Toyota", "type"=>"Sedan", "foglights"=>"1", "commit"=>"Search"}
+  [1m[35mInventory Load (18.2ms)[0m  SELECT `inventories`.* FROM `inventories` INNER JOIN caroptions ON inventories.VIN = caroptions.VIN WHERE `caroptions`.`FOGLIGHTS` = 'Yes' AND `inventories`.`make` = 'Toyota' AND `inventories`.`type` = 'Sedan'
+  Rendered inventory/client.html.erb within layouts/application (48.4ms)
+Completed 200 OK in 183ms (Views: 132.6ms | ActiveRecord: 48.4ms)
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Toyota&type=Sedan&foglights=1&commit=Search" for ::1 at 2015-12-04 12:59:43 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Toyota", "type"=>"Sedan", "foglights"=>"1", "commit"=>"Search"}
+  [1m[36mInventory Load (17.4ms)[0m  [1mSELECT `inventories`.* FROM `inventories` INNER JOIN caroptions ON inventories.VIN = caroptions.VIN WHERE `caroptions`.`FOGLIGHTS` = 'Yes' AND `inventories`.`make` = 'Toyota' AND `inventories`.`type` = 'Sedan'[0m
+  Rendered inventory/client.html.erb within layouts/application (86.1ms)
+Completed 200 OK in 244ms (Views: 148.1ms | ActiveRecord: 88.0ms)
+
+
+Started GET "/assets/welcome_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/application.self-9faddc8aba49dddfbb7fca3ce3251f9404ce506c9101a35969c92f5d85c52795.css?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-12-04 12:59:43 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-12-04 12:59:44 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-04 12:59:44 -0500
+
+
+Started GET "/assets/welcome_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-04 12:59:44 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-12-04 12:59:44 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Toyota&type=Sedan&commit=Search" for ::1 at 2015-12-04 12:59:46 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Toyota", "type"=>"Sedan", "commit"=>"Search"}
+  [1m[35mInventory Load (60.6ms)[0m  SELECT `inventories`.* FROM `inventories`
+  [1m[36mInventory Load (17.8ms)[0m  [1mSELECT `inventories`.`VIN` FROM `inventories` WHERE `INVENTORY`.`make` = 'Toyota' AND `INVENTORY`.`type` = 'Sedan'[0m
+Mysql2::Error: Unknown column 'INVENTORY.make' in 'where clause': SELECT `inventories`.`VIN` FROM `inventories` WHERE `INVENTORY`.`make` = 'Toyota' AND `INVENTORY`.`type` = 'Sedan'
+Completed 500 Internal Server Error in 136ms (ActiveRecord: 0.0ms)
+  [1m[35mInventory Load (18.0ms)[0m  SELECT `inventories`.`VIN` FROM `inventories` WHERE `INVENTORY`.`make` = 'Toyota' AND `INVENTORY`.`type` = 'Sedan'
+Mysql2::Error: Unknown column 'INVENTORY.make' in 'where clause': SELECT `inventories`.`VIN` FROM `inventories` WHERE `INVENTORY`.`make` = 'Toyota' AND `INVENTORY`.`type` = 'Sedan'
+
+NoMethodError (undefined method `where' for #<InventoryController:0x007fefb980ada8>):
+  app/controllers/inventory_controller.rb:38:in `client'
+
+
+  [1m[36mInventory Load (16.4ms)[0m  [1mSELECT `inventories`.`VIN` FROM `inventories` WHERE `INVENTORY`.`make` = 'Toyota' AND `INVENTORY`.`type` = 'Sedan'[0m
+Mysql2::Error: Unknown column 'INVENTORY.make' in 'where clause': SELECT `inventories`.`VIN` FROM `inventories` WHERE `INVENTORY`.`make` = 'Toyota' AND `INVENTORY`.`type` = 'Sedan'
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.8ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (97.9ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (59.9ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (138.9ms)
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Toyota&type=Sedan&commit=Search" for ::1 at 2015-12-04 13:00:07 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Toyota", "type"=>"Sedan", "commit"=>"Search"}
+  [1m[35mInventory Load (18.1ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`make` = 'Toyota' AND `inventories`.`type` = 'Sedan'
+  Rendered inventory/client.html.erb within layouts/application (91.2ms)
+Completed 200 OK in 213ms (Views: 137.7ms | ActiveRecord: 69.6ms)
+
+
+Started GET "/assets/welcome_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/application.self-9faddc8aba49dddfbb7fca3ce3251f9404ce506c9101a35969c92f5d85c52795.css?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/welcome_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-12-04 13:00:08 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Honda&type=Coupe&commit=Search" for ::1 at 2015-12-04 13:00:41 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Honda", "type"=>"Coupe", "commit"=>"Search"}
+  [1m[36mInventory Load (18.8ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`make` = 'Honda' AND `inventories`.`type` = 'Coupe'[0m
+  Rendered inventory/client.html.erb within layouts/application (30.2ms)
+Completed 200 OK in 148ms (Views: 128.2ms | ActiveRecord: 18.8ms)
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=Honda&type=Coupe&foglights=1&commit=Search" for ::1 at 2015-12-04 13:00:53 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"Honda", "type"=>"Coupe", "foglights"=>"1", "commit"=>"Search"}
+  [1m[35mInventory Load (17.7ms)[0m  SELECT `inventories`.* FROM `inventories` INNER JOIN caroptions ON inventories.VIN = caroptions.VIN WHERE `caroptions`.`FOGLIGHTS` = 'Yes' AND `inventories`.`make` = 'Honda' AND `inventories`.`type` = 'Coupe'
+  Rendered inventory/client.html.erb within layouts/application (24.6ms)
+Completed 200 OK in 170ms (Views: 128.9ms | ActiveRecord: 35.5ms)
+
+
+Started GET "/inventory/lookupVIN?VIN=2M34FY0WTOOZD6Q2N" for ::1 at 2015-12-04 13:00:57 -0500
+Processing by InventoryController#lookupVIN as */*
+  Parameters: {"VIN"=>"2M34FY0WTOOZD6Q2N"}
+  [1m[36mCaroption Load (15.9ms)[0m  [1mSELECT `caroptions`.* FROM `caroptions` WHERE (VIN = '2M34FY0WTOOZD6Q2N')[0m
+Completed 200 OK in 37ms (Views: 0.2ms | ActiveRecord: 31.8ms)
+
+
+Started GET "/inventory/lookupVIN?VIN=2P205SK8CPH04ALGT" for ::1 at 2015-12-04 13:01:00 -0500
+Processing by InventoryController#lookupVIN as */*
+  Parameters: {"VIN"=>"2P205SK8CPH04ALGT"}
+  [1m[35mCaroption Load (15.0ms)[0m  SELECT `caroptions`.* FROM `caroptions` WHERE (VIN = '2P205SK8CPH04ALGT')
+Completed 200 OK in 17ms (Views: 0.3ms | ActiveRecord: 15.0ms)
+
+
+Started GET "/inventory/lookupVIN?VIN=5I91AOI0EYRQRT927" for ::1 at 2015-12-04 13:01:02 -0500
+Processing by InventoryController#lookupVIN as */*
+  Parameters: {"VIN"=>"5I91AOI0EYRQRT927"}
+  [1m[36mCaroption Load (18.0ms)[0m  [1mSELECT `caroptions`.* FROM `caroptions` WHERE (VIN = '5I91AOI0EYRQRT927')[0m
+Completed 200 OK in 20ms (Views: 0.2ms | ActiveRecord: 18.0ms)

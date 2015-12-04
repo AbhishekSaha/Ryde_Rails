@@ -5,16 +5,15 @@ class InventoryController < ApplicationController
 
   def lookupVIN
 
-    lops = Caroption.where("VIN = "  + "'" + params['VIN']+ "'")
+    lops = Caroption.where("VIN = " + "'" + params['VIN']+ "'")
 
     rez = {"near" => JSON.parse(lops.to_json)}
 
 
     respond_to do |format|
-      format.json { render json: rez }  # respond with the created JSON object
+      format.json { render json: rez } # respond with the created JSON object
     end
   end
-
 
 
   def client
@@ -35,8 +34,12 @@ class InventoryController < ApplicationController
 
       @VINS = Inventory.all.where(:INVENTORY => inventory).select("VIN")
 
-      @inventorys = Inventory.joins("INNER JOIN caroptions ON inventories.VIN = caroptions.VIN")
-                        .where(:inventories => inventory, :caroptions => caropts)
+      if caropts.blank?
+        @inventorys = Inventory.where(:inventories => inventory)
+      else
+        @inventorys = Inventory.joins("INNER JOIN caroptions ON inventories.VIN = caroptions.VIN")
+                          .where(:inventories => inventory, :caroptions => caropts)
+      end
     end
 
   end
