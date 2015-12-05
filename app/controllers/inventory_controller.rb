@@ -16,7 +16,7 @@ class InventoryController < ApplicationController
   end
 
 
-  def client
+  def clientoldie
     @inventorys = Inventory.all
     if params['commit'].present?
 

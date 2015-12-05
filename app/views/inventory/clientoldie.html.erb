@@ -31,7 +31,7 @@
 
 
 
-  <table class="table table-hover table-bordered table-striped table-responsive table-condensed">
+<table id="queryresults" class="table" bgcolor="#00F00">
     <tr>
       <th></th>
       <th>Rental Price/Day</th>
@@ -68,11 +68,13 @@
 
 <script>
 
-  $('.rentbutton').click(function(){
-
+  $(document).on('change', 'input', function () {
+    $('#table_id').DataTable();
   });
 
   $(function() {
+
+
     $("td[colspan=9]").hide();
     $("table").click(function(event) {
       event.stopPropagation();
