@@ -13,13 +13,13 @@
 	<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
 
 	<!-- Bootstrap  -->
-	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/assets/bootstrap.min.css" rel="stylesheet">
 
 	<!-- icon fonts font Awesome -->
-	<link href="assets/css/font-awesome.min.css" rel="stylesheet">
+	<link href="/assets/font-awesome.min.css" rel="stylesheet">
 
 	<!-- Custom Styles -->
-	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="/assets/style.css" rel="stylesheet">
 
 	<!--[if lt IE 9]>
 	<script src="assets/js/html5shiv.js"></script>
@@ -27,7 +27,6 @@
 
 </head>
 <body>
-
 
 	<!-- Preloader -->
 	<div id="preloader">
@@ -63,8 +62,6 @@
 			<ul id="headernavigation" class="nav navbar-nav">
 				<li class="active"><a href="#page-top">Home</a></li>
 				<li><a href="#about">About</a></li>
-				<li><a href="#subscribe">Subscribe</a></li>
-				<li><a href="#contact">Contact</a></li>
 			</ul> <!-- /.nav .navbar-nav -->
 		</nav> <!-- /.navbar-collapse  -->
 	</div><!-- /#main-menu -->
@@ -77,17 +74,15 @@
 
 		<div class="pattern height-resize">
 			<div class="container">
+				<h3 class="section-name">
+					<span>
+						Take a <br> <br> <br>
+					</span>
+				</h3><!-- /.section-name -->
 				<h1 class="site-title">
 					Ryde
 				</h1><!-- /.site-title -->
-				<h3 class="section-name">
-					<span>
-						We Are
-					</span>
-				</h3><!-- /.section-name -->
-				<h2 class="section-title">
-					Coming Soon
-				</h2><!-- /.Section-title  -->
+
 				<div id="time_countdown" class="time-count-container">
 
 					<div class="col-sm-3">
@@ -166,147 +161,146 @@
 						About Us
 					</span>
 				</h3><!-- /.section-name -->
-				<h2 class="section-title">
-					We Are dedicated
-				</h2><!-- /.Section-title  -->
-				<p class="section-description">
-					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-				</p><!-- /.section-description -->
 
-				<div class="team-container">
-					<div class="row">
-						<div class="col-sm-4">
-							<div class="team-member">
-								<figure>
-									<img src="/assets/team-member-1.jpg" alt="Team Member">
-									<figcaption>
-										<p class="member-name">John Doe</p>
-										<p class="designation">
-											CEO
-										</p><!-- /.designation -->
+				<%= form_tag({controller: "inventory", action: "client"}, method: "get", class: "form-inline", remote: false) do %>
+    <div class="form-group">
+      <%= label_tag("Make") %>
+      <%= select_tag("make", '<option>Toyota</option><option>Honda</option><option>Ford</option>'.html_safe, :class => "form-control") %>
+    </div>
+    <br/>
 
-									</figcaption>
-								</figure>
-								<div class="social-btn-container">
-									<div class="team-socail-btn">
-										<span class="social-btn-box facebook-btn-container">
-											<a href="#" class="facebook-btn">
-												<i class="fa fa-facebook"></i>
-											</a><!-- /.facebook-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box twitter-btn-container">
-											<a href="#" class="twitter-btn">
-												<i class="fa fa-twitter"></i>
-											</a><!-- /.twitter-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box linkedin-btn-container">
-											<a href="#" class="linkedin-btn">
-												<i class="fa fa-linkedin"></i>
-											</a><!-- /.linkedin-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box github-btn-container">
-											<a href="#" class="github-btn">
-												<i class="fa fa-github-alt"></i>
-											</a><!-- /.github-btn -->
-										</span><!-- /.social-btn-box -->
-									</div><!-- /.team-socail-btn -->
-								</div><!-- /.social-btn-container -->
-							</div><!-- /.team-member -->
-						</div><!-- /.col-sm-4 -->
+    <div class="form-group">
+      <%= label_tag(:type, "Type")%>
+      <%= select_tag("type", '<option>Sedan</option><option>SUV</option><option>Electric</option><option>Coupe</option>'.html_safe, :class => "form-control") %>
+    </div>
+    <br/>
 
 
-						<div class="col-sm-4">
-							<div class="team-member">
-								<figure>
-									<img src="/assets/team-member-2.jpg" alt="Team Member">
-									<figcaption>
-										<p class="member-name">
-											Claudia Springer
-										</p><!-- /.member-name -->
-										<p class="designation">
-											Designer
-										</p><!-- /.designation -->
+    <div class="form-horizontal">
+      <%= label_tag("Optional:") %> &nbsp; &nbsp;
+      <%= label_tag(:leather, "Leather Seats") %>
+      <%= check_box_tag(:leather) %> &nbsp; &nbsp;
+      <%= label_tag(:fourwheeldrive, "Four Wheel Drive") %>
+      <%= check_box_tag(:fourwheeldrive) %> &nbsp; &nbsp;
+      <%= label_tag(:foglights, "Fog Lights") %>
+      <%= check_box_tag(:foglights) %>&nbsp; &nbsp;
+      <%= label_tag(:surround, "Surround Sound") %>
+      <%= check_box_tag(:surround) %>&nbsp; &nbsp;
+      <%= label_tag(:dvd, "DVD Player") %>
+      <%= check_box_tag(:dvd) %>&nbsp; &nbsp;
+      <%= submit_tag("Search") %>
+    </div>
 
-									</figcaption>
-								</figure>
-								<div class="social-btn-container">
-									<div class="team-socail-btn">
-										<span class="social-btn-box facebook-btn-container">
-											<a href="#" class="facebook-btn">
-												<i class="fa fa-facebook"></i>
-											</a><!-- /.facebook-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box twitter-btn-container">
-											<a href="#" class="twitter-btn">
-												<i class="fa fa-twitter"></i>
-											</a><!-- /.twitter-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box linkedin-btn-container">
-											<a href="#" class="linkedin-btn">
-												<i class="fa fa-linkedin"></i>
-											</a><!-- /.linkedin-btn -->
-										</span><!-- /.social-btn-box -->
-
-										<span class="social-btn-box github-btn-container">
-											<a href="#" class="github-btn">
-												<i class="fa fa-github-alt"></i>
-											</a><!-- /.github-btn -->
-										</span><!-- /.social-btn-box -->
-									</div><!-- /.team-socail-btn -->
-								</div><!-- /.social-btn-container -->
-							</div><!-- /.team-member -->
-						</div><!-- /.col-sm-4 -->
+  <% end %>
 
 
-						<div class="col-sm-4">
-							<div class="team-member">
-								<figure>
-									<img src="/assets/team-member-3.jpg" alt="Team Member">
-									<figcaption>
-										<p class="member-name">
-											Max Anthony
-										</p><!-- /.member-name -->
-										<p class="designation">
-											Developer
-										</p><!-- /.designation -->
 
-									</figcaption>
-								</figure>
-								<div class="social-btn-container">
-									<div class="team-socail-btn">
-										<span class="social-btn-box facebook-btn-container">
-											<a href="#" class="facebook-btn">
-												<i class="fa fa-facebook"></i>
-											</a><!-- /.facebook-btn -->
-										</span><!-- /.social-btn-box -->
+<style>
+	table {
+		background-color: : gray;
+	} </style>
 
-										<span class="social-btn-box twitter-btn-container">
-											<a href="#" class="twitter-btn">
-												<i class="fa fa-twitter"></i>
-											</a><!-- /.twitter-btn -->
-										</span><!-- /.social-btn-box -->
+  <table class="table table-hover table-bordered table-striped table-responsive table-condensed">
+    <tr>
+      <th></th>
+      <th>Rental Price/Day</th>
+      <th>Model</th>
+      <th>Make</th>
+      <th>Type</th>
+      <th>Year</th>
+      <th>Color</th>
+      <th>Miles Per Gallon</th>
+      <th></th>
+    </tr>
 
-										<span class="social-btn-box linkedin-btn-container">
-											<a href="#" class="linkedin-btn">
-												<i class="fa fa-linkedin"></i>
-											</a><!-- /.linkedin-btn -->
-										</span><!-- /.social-btn-box -->
 
-										<span class="social-btn-box github-btn-container">
-											<a href="#" class="github-btn">
-												<i class="fa fa-github-alt"></i>
-											</a><!-- /.github-btn -->
-										</span><!-- /.social-btn-box -->
-									</div><!-- /.team-socail-btn -->
-								</div><!-- /.social-btn-container -->
-							</div><!-- /.team-member -->
-						</div><!-- /.col-sm-4 -->
-					</div><!-- /.row -->
+    <% @inventorys.each do |car| %>
+        <tr id="<%= car.VIN.to_s %>" class="rowentry">
+          <td>+</td>
+          <td>$<%= car.RENTALPRICE %></td>
+          <td><%= car.MODEL %></td>
+          <td><%= car.MAKE %></td>
+          <td><%= car.TYPE %></td>
+          <td><%= car.YEAR %></td>
+          <td><%= car.COLOR %></td>
+          <td><%= car.MPG %></td>
+          <td><button name="<%= car.VIN.to_s %>" class="rentbutton" type="button">Rent</button></td>
+        </tr>
+        <tr>
+          <td colspan="9"></td>
+        </tr>
+
+    <% end %>
+  </table>
+
+</div>
+
+<script>
+
+  $('.rentbutton').click(function(){
+
+  });
+
+  $(function() {
+    $("td[colspan=9]").hide();
+    $("table").click(function(event) {
+      event.stopPropagation();
+      var $target = $(event.target);
+      if ( $target.closest("td").attr("colspan") > 1 ) {
+        $target.slideUp();
+        $target.closest("tr").prev().find("td:first").html("+");
+      } else {
+        $target.closest("tr").next().find("td[colspan=9]").slideToggle();
+        if ($target.closest("tr").find("td:first").html() == "+"){
+          $target.closest("tr").find("td:first").html("-");
+          $.ajax({
+          type:'GET',
+          url:'/inventory/lookupVIN',
+          data: { VIN : $target.closest("tr").attr('id')
+          },
+          success:function(json){
+            var t = $target.closest("tr").next().find("td[colspan=9]");
+
+            t.html("<ul><li>Leather Seats: "
+            + json.near[0].LEATHER
+            + "</li><li>Foglights: "
+            + json.near[0].FOGLIGHTS
+                +"</li><li>Four Wheel Drive: "
+            + json.near[0].FWD
+            + "</li><li>DVD Player: "
+            + json.near[0].DVD
+            + "</li><li>Surround Sound: "
+            + json.near[0].SURROUND
+            +"</li></ul>");
+          }
+        });}
+        else
+          $target.closest("tr").find("td:first").html("+");
+      }
+    });
+  });
+
+/*
+  $('tr.rowentry').on('click', function() {
+    $.ajax({
+      type:'GET',
+      url:'/inventory/lookupVIN',
+      data: { VIN : $(this).attr('id')
+       },
+    success:function(json){
+      //I assume you want to do something on controller action execution success?
+      alert(JSON.stringify(json.near[0]));
+    }
+  });
+
+  });*/
+</script>
+
+
+
+
+
+
 
 				</div><!-- /.team-container -->
 
@@ -323,136 +317,14 @@
 
 
 
-	<!-- Subscribe Section -->
-	<section id="subscribe" class="section-style">
-		<div class="pattern height-resize">
-			<div class="container">
-				<h3 class="section-name">
-					<span>
-						Subscribe
-					</span>
-				</h3><!-- /.section-name -->
-				<h2 class="section-title">
-					Our Newsletter
-				</h2><!-- /.Section-title  -->
-				<p class="section-description">
-					Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-				</p><!-- /.section-description -->
 
-				<form class="news-letter" method="post">
-					<p class="alert-success"></p>
-					<p class="alert-warning"></p>
-
-					<div class="subscribe-hide">
-						<input class="form-control" type="email" id="subscribe-email" name="subscribe-email" placeholder="Email Address"  required>
-						<button  type="submit" id="subscribe-submit" class="btn"><i class="fa fa-envelope"></i></button>
-						<span id="subscribe-loading" class="btn"> <i class="fa fa-refresh fa-spin"></i> </span>
-						<div class="subscribe-error"></div>
-					</div><!-- /.subscribe-hide -->
-					<div class="subscribe-message"></div>
-				</form><!-- /.news-letter -->
-
-				<div class="social-btn-container">
-					<span class="social-btn-box">
-						<a href="#" class="facebook-btn">
-							<i class="fa fa-facebook"></i></a>
-						</span><!-- /.social-btn-box -->
-
-						<span class="social-btn-box">
-							<a href="#" class="twitter-btn"><i class="fa fa-twitter"></i></a>
-						</span><!-- /.social-btn-box -->
-
-						<span class="social-btn-box">
-							<a href="#" class="linkedin-btn"><i class="fa fa-linkedin"></i></a>
-						</span><!-- /.social-btn-box -->
-
-						<span class="social-btn-box">
-							<a href="#" class="google-plus-btn"><i class="fa fa-google-plus"></i></a>
-						</span><!-- /.social-btn-box -->
-
-
-						<span class="social-btn-box">
-							<a href="#" class="youtube-btn"><i class="fa fa-youtube"></i></a>
-						</span><!-- /.social-btn-box -->
-
-
-
-					</div><!-- /.social-btn-container -->
-
-					<div class="next-section">
-						<a class="go-to-contact"><span></span></a>
-					</div><!-- /.next-section -->
-
-				</div><!-- /.container -->
-			</div><!-- /.pattern -->
-
-		</section><!-- /#subscribe -->
-		<!-- Subscribe Section End -->
-
-
-		<!-- Contact Section -->
-		<section id="contact" class="section-style">
-			<div class="pattern height-resize">
-				<div class="container">
-					<h3 class="section-name">
-						<span>
-							Contact
-						</span>
-					</h3><!-- /.section-name -->
-					<h2 class="section-title">
-						Get in Touch
-					</h2><!-- /.Section-title  -->
-					<p class="section-description">
-						Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
-					</p><!-- /.section-description -->
-
-					<form id="contact-form" action="email.php" method="post" class="clearfix">
-						<div class="contact-box-hide">
-							<div class="col-sm-6">
-								<input type="text"  class="form-control" id="first_name" name="first_name" required placeholder="First Name">
-								<span class="first-name-error"></span>
-							</div>
-							<div class="col-sm-6">
-								<input type="text"  class="form-control" id="last_name" name="last_name" required placeholder="Last Name">
-								<span class="last-name-error"></span>
-							</div>
-							<div class="col-sm-6">
-								<input type="email" class="form-control"  id="contact_email" name="contact_email" required placeholder="Email Address">
-								<span class="contact-email-error"></span>
-							</div>
-							<div class="col-sm-6">
-								<input type="text"  class="form-control" id="subject" name="contact_subject" required placeholder="Subject">
-								<span class="contact-subject-error"></span>
-							</div>
-							<div class="col-sm-10">
-								<textarea class="form-control" rows="5" id="message" name="message" required placeholder="Message"></textarea>
-								<span class="contact-message-error"></span>
-							</div>
-							<div class="col-sm-2">
-								<button id="contact-submit" class="btn custom-btn col-xs-12" type="submit" name="submit"><a href=""></a><i class="fa fa-rocket"></i></button>
-								<span id="contact-loading" class="btn custom-btn col-xs-12"> <i class="fa fa-refresh fa-spin"></i> </span>
-							</div>
-						</div><!-- /.contact-box-hide -->
-						<div class="contact-message"></div>
-
-					</form><!-- /#contact-form -->
-
-					<div class="next-section">
-						<a class="go-to-page-top"><span></span></a>
-					</div><!-- /.next-section -->
-
-				</div><!-- /.container -->
-			</div><!-- /.pattern -->
-
-		</section><!-- /#contact -->
-		<!-- Contact Section End -->
 
 
 
 		<!-- Footer Section -->
 		<footer id="footer-section">
-			<p class="copyright">
-				&copy; <a href="http://demos.jeweltheme.com/kite">Kite</a> 2014-2015, All Rights Reserved. Designed by & Developed by <a href="http://jeweltheme.com">Jewel Theme</a>
+			<p>
+				&copy; Ryde by Ajay Srivastava & Abhishek Saha
 			</p>
 		</footer>
 		<!-- Footer Section End -->

@@ -61,6 +61,7 @@ body{
 a{
 	color: #3498db;
 }
+
 a:focus{
 	outline:none;
 	outline-offset:inherit;
@@ -74,7 +75,7 @@ a:focus{
 	background-size:cover;
 }
 .pattern{
-	background:rgba(0,0,0,.5) url(../images/pattern.png);
+	background:rgba(0,0,0,.5) url(/assets/pattern.png);
 	padding-top:100px;
 }
 .container{
@@ -897,7 +898,7 @@ form.news-letter .btn:hover{
 ---------------------------------------------------------------------- */
 #footer-section{
 	width: 100%;
-	min-height: 80px;
+	min-height: 50px;
 }
 #footer-section p{
 	margin: 0;
@@ -960,7 +961,7 @@ form.news-letter .btn:hover{
 	#contact-form  #email{
 		border-right:1px solid #fff;
 	}
-		#contact-form  .btn{
+	#contact-form  .btn{
 	border-left:1px solid #fff;
 	}
 }
@@ -1153,7 +1154,7 @@ background: #00aaff;
 	        animation: load 0.8s linear 0.8s infinite;
 }
 #loader .lading{
-	background-image: url(../images/loading.gif);
+	background-image: url(/assets/loading.gif);
 	background-repeat: no-repeat;
 	position: absolute;
 	left: 0;
