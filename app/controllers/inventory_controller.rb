@@ -17,7 +17,7 @@ class InventoryController < ApplicationController
 
 
   def clientoldie
-    @inventorys = Inventory.all
+    @inventorys = Inventory.order("DISTANCE")
 
     if params['commit'].present?
 
@@ -36,17 +36,21 @@ class InventoryController < ApplicationController
       @VINS = Inventory.all.where(:INVENTORY => inventory).select("VIN")
 
       if caropts.blank?
-        @inventorys = Inventory.where(:inventories => inventory)
+        @inventorys = Inventory.where(:inventories => inventory).order("DISTANCE")
       else
         @inventorys = Inventory.joins("INNER JOIN caroptions ON inventories.VIN = caroptions.VIN")
                           .where(:inventories => inventory, :caroptions => caropts)
+        @sellers = Seller.select("SQRT(
+    POW(69.1 * (latitude - 40.748817), 2) +
+    POW(69.1 * (-73.985428 - longitude) * COS(latitude / 57.3), 2)) AS distance").order("distance")
+        puts(@sellers.inspect)
       end
     end
 
   end
 
   def client
-    @inventorys = Inventory.all
+    @inventorys = Inventory.order("DISTANCE")
 
     if params['commit'].present?
 
@@ -65,7 +69,7 @@ class InventoryController < ApplicationController
       @VINS = Inventory.all.where(:INVENTORY => inventory).select("VIN")
 
       if caropts.blank?
-        @inventorys = Inventory.where(:inventories => inventory)
+        @inventorys = Inventory.where(:inventories => inventory).order("Distance")
       else
         @inventorys = Inventory.joins("INNER JOIN caroptions ON inventories.VIN = caroptions.VIN")
                           .where(:inventories => inventory, :caroptions => caropts)

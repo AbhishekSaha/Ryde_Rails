@@ -72,6 +72,7 @@
     <th>Year</th>
     <th>Color</th>
     <th>Miles Per Gallon</th>
+    <th>Distance</th>
     <th>Rent</th>
   </tr>
 </thead>
@@ -86,6 +87,7 @@
         <td><%= car.YEAR %></td>
         <td><%= car.COLOR %></td>
         <td><%= car.MPG %></td>
+        <td><%= car.DISTANCE %></td>
         <td>
           <button name="<%= car.VIN.to_s %>" class="rentbutton" type="button">Rent</button>
         </td>
@@ -125,17 +127,17 @@
             success: function (json) {
               var t = $target.closest("tr").next().find("td[colspan=9]");
 
-              t.html("<ul><li>Leather Seats: "
+              t.html("Leather Seats: "
                   + json.near[0].LEATHER
-                  + "</li><li>Foglights: "
+                  + "<br />Foglights: "
                   + json.near[0].FOGLIGHTS
-                  + "</li><li>Four Wheel Drive: "
+                  + "<br >Four Wheel Drive: "
                   + json.near[0].FWD
-                  + "</li><li>DVD Player: "
+                  + "<br >DVD Player: "
                   + json.near[0].DVD
-                  + "</li><li>Surround Sound: "
+                  + "<br >Surround Sound: "
                   + json.near[0].SURROUND
-                  + "</li></ul>");
+              );
             }
           });
         }
