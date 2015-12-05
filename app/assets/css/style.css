@@ -575,6 +575,10 @@ a:focus{
 
 /* 5 - About Us Section
 ---------------------------------------------------------------------- */
+#about {
+	background: url("about-us.jpg");
+}
+
 .team-container .col-sm-4{
 	padding:60px 15px 0 15px;
 }
@@ -717,6 +721,10 @@ a:focus{
 /* 6 - Subscribe Section
 ---------------------------------------------------------------------- */
 
+#subscribe {
+	background: url("newsletter.jpg");
+}
+
 form.news-letter{
 	max-width:550px;
 	margin:auto;
@@ -783,6 +791,10 @@ form.news-letter .btn:hover{
 
 /* 7 - Contact Section
 ---------------------------------------------------------------------- */
+#contact {
+	background: url("contact.jpg");
+}
+
 #contact .next-section a{
 
 	-webkit-transform:rotate(180deg);
