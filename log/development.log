@@ -1699,3 +1699,1810 @@ Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:38:34 -0500
 
 
 Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:38:34 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:40:27 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (11.7ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (11.7ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (303.7ms)
+Completed 200 OK in 558ms (Views: 505.1ms | ActiveRecord: 41.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:40:27 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (51.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (20.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.4ms)
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:40:28 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:40:33 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (15.5ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (135.9ms)
+Completed 200 OK in 315ms (Views: 298.8ms | ActiveRecord: 15.5ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (37.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (18.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.8ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:40:34 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:51:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (8.3ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (19.4ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (280.2ms)
+Completed 200 OK in 515ms (Views: 441.7ms | ActiveRecord: 58.3ms)
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:51:07 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (19.3ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (126.3ms)
+Completed 200 OK in 264ms (Views: 244.0ms | ActiveRecord: 19.3ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (12.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (34.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.0ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:51:08 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:51:29 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (14.8ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (159.2ms)
+Completed 200 OK in 310ms (Views: 294.2ms | ActiveRecord: 14.8ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.9ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:51:30 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:54:19 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (12.5ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (140.0ms)
+Completed 200 OK in 333ms (Views: 318.6ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:54:19 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.2ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:54:20 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:54:44 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (11.7ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (118.2ms)
+Completed 200 OK in 1327ms (Views: 1314.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:54:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (13.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (23.8ms)
+
+
+Started GET "/assets/style.self-cab2315198653321896957453c615fc9e3d20eaab8e456dbf1bdcb82e2c4bb5e.css?body=1" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:54:46 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:55:27 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (13.2ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (164.8ms)
+Completed 200 OK in 341ms (Views: 326.1ms | ActiveRecord: 13.2ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (22.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (34.2ms)
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:55:28 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:55:44 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (11.7ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (116.4ms)
+Completed 200 OK in 253ms (Views: 240.3ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.5ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:55:45 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (19.8ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (128.8ms)
+Completed 200 OK in 282ms (Views: 261.5ms | ActiveRecord: 19.8ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (43.2ms)
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:56:00 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:56:09 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (11.8ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (111.6ms)
+Completed 200 OK in 243ms (Views: 230.3ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (38.9ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:56:10 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (11.8ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (136.5ms)
+Completed 200 OK in 288ms (Views: 275.4ms | ActiveRecord: 11.8ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (24.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (4.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (30.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (50.9ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:56:24 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (11.7ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (113.8ms)
+Completed 200 OK in 264ms (Views: 252.0ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (28.6ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:56:39 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:56:40 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:56:40 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:56:40 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:56:40 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:57:41 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (13.6ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (136.4ms)
+Completed 200 OK in 274ms (Views: 258.8ms | ActiveRecord: 13.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:57:41 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (12.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (24.9ms)
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:57:42 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (11.7ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (122.0ms)
+Completed 200 OK in 329ms (Views: 316.7ms | ActiveRecord: 11.7ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (10.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (22.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (39.6ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:57:54 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (12.5ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (118.5ms)
+Completed 200 OK in 257ms (Views: 243.3ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (20.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (32.3ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:58:01 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (11.9ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (139.8ms)
+Completed 200 OK in 292ms (Views: 279.5ms | ActiveRecord: 11.9ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.9ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:58:07 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:58:22 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (16.3ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (118.4ms)
+Completed 200 OK in 719ms (Views: 701.8ms | ActiveRecord: 16.3ms)
+
+
+Started GET "/assets/style.self-65535e9164743cfa0dc092f28b0877e2b609fb8920e86de6cf2d6070ce91de67.css?body=1" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (26.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (17.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (53.2ms)
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:58:23 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:58:24 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:58:24 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:58:24 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:58:24 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:58:36 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (12.0ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (128.8ms)
+Completed 200 OK in 703ms (Views: 690.1ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/style.self-79ff93e1e65801e000dca5dd92c974f885a34f4b452395b40a06e8c60e7a5b01.css?body=1" for 127.0.0.1 at 2015-12-05 18:58:37 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:58:37 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (23.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (19.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (35.8ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:58:37 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:58:37 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:37 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:38 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:58:38 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:58:38 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:58:38 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:58:38 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:58:38 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:58:38 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:58:38 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:58:59 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (29.3ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (121.7ms)
+Completed 200 OK in 265ms (Views: 234.9ms | ActiveRecord: 29.3ms)
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:58:59 -0500
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:58:59 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:58:59 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.9ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (19.2ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (15.1ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (29.0ms)
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:58:59 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:59:00 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:59:00 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:59:00 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:59:00 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:59:00 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:59:00 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:59:00 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:59:00 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:59:11 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[35mInventory Load (12.0ms)[0m  SELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance
+  Rendered inventory/client.html.erb within layouts/application (124.8ms)
+Completed 200 OK in 757ms (Views: 744.2ms | ActiveRecord: 12.0ms)
+
+
+Started GET "/assets/style.self-fba64cdaa7a86243e4d11fe613c7c3ee09f71f40ce2781e3789c2a76ac5d932d.css?body=1" for 127.0.0.1 at 2015-12-05 18:59:12 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:59:12 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (21.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (16.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (30.1ms)
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:59:12 -0500
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:59:13 -0500
+
+
+Started GET "/inventory/client?utf8=%E2%9C%93&make=&type=Hatchback&commit=Search" for 127.0.0.1 at 2015-12-05 18:59:30 -0500
+Processing by InventoryController#client as HTML
+  Parameters: {"utf8"=>"✓", "make"=>"", "type"=>"Hatchback", "commit"=>"Search"}
+  [1m[36mInventory Load (17.6ms)[0m  [1mSELECT `inventories`.* FROM `inventories` WHERE `inventories`.`type` = 'Hatchback'  ORDER BY Distance[0m
+  Rendered inventory/client.html.erb within layouts/application (192.5ms)
+Completed 200 OK in 352ms (Views: 333.5ms | ActiveRecord: 17.6ms)
+
+
+Started GET "/assets/bootstrap.min.css" for 127.0.0.1 at 2015-12-05 18:59:30 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /usr/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /usr/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (17.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (14.8ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /var/lib/gems/2.1.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (31.8ms)
+
+
+Started GET "/assets/font-awesome.min.css" for 127.0.0.1 at 2015-12-05 18:59:30 -0500
+
+
+Started GET "/assets/style.css" for 127.0.0.1 at 2015-12-05 18:59:30 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for 127.0.0.1 at 2015-12-05 18:59:30 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for 127.0.0.1 at 2015-12-05 18:59:30 -0500
+
+
+Started GET "/assets/plugins.js" for 127.0.0.1 at 2015-12-05 18:59:31 -0500
+
+
+Started GET "/assets/functions.js" for 127.0.0.1 at 2015-12-05 18:59:31 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for 127.0.0.1 at 2015-12-05 18:59:31 -0500
+
+
+Started GET "/assets/about-us.jpg" for 127.0.0.1 at 2015-12-05 18:59:31 -0500
+
+
+Started GET "/assets/pattern.png" for 127.0.0.1 at 2015-12-05 18:59:31 -0500
+
+
+Started GET "/assets/page-top.jpg" for 127.0.0.1 at 2015-12-05 18:59:31 -0500
+
+
+Started GET "/assets/loading.gif" for 127.0.0.1 at 2015-12-05 18:59:31 -0500

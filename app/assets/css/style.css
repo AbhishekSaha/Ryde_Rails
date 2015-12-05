@@ -465,22 +465,13 @@ a:focus{
 ---------------------------------------------------------------------- */
 .site-title{
 	text-align:center;
-	font-size:66px;
+	font-size:128px;
 	font-family:'Pacifico';
 	margin:0 0 50px 0;
 	padding-bottom:50px;
 	position:relative;
 }
 .site-title:before,
-.site-title:after{
-	content:"";
-	width:100px;
-	height:10px;
-	left:50%;
-	margin-left:-50px;
-	border-bottom:1px double #fff;
-	position:absolute;
-}
 .site-title:before{
 	bottom:0;
 }
@@ -565,7 +556,6 @@ a:focus{
 	font-size:18px;
 	line-height:40px;
 	display:inline-block;
-	background-color:#3498db;
 	text-transform:uppercase;
 	padding:0px 25px;
 }
@@ -898,7 +888,7 @@ form.news-letter .btn:hover{
 ---------------------------------------------------------------------- */
 #footer-section{
 	width: 100%;
-	min-height: 50px;
+	min-height: 50 px;
 }
 #footer-section p{
 	margin: 0;
