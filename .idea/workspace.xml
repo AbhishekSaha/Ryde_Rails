@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4da18e48-8c46-4958-b079-6c7344a998f2" name="Default" comment="Fixed table">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/tBqvVWwYlzMBhqS3sBgSnsT7g5RAqo2OeuZ8rQqiKko.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/tBqvVWwYlzMBhqS3sBgSnsT7g5RAqo2OeuZ8rQqiKko.cache" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/ty5JiqeAdmiZrN-Euhcw845PMOUK2ksKh76tZ29lh9I.cache" afterPath="$PROJECT_DIR$/tmp/cache/assets/development/sprockets/v3.0/ty5JiqeAdmiZrN-Euhcw845PMOUK2ksKh76tZ29lh9I.cache" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inventory_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inventory_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inventory/client.html.erb" afterPath="$PROJECT_DIR$/app/views/inventory/client.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inventory/clientoldie.html.erb" afterPath="$PROJECT_DIR$/app/views/inventory/clientoldie.html.erb" />
     </list>
     <ignored path="Ryde.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -55,8 +55,8 @@
       <file leaf-file-name="client.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inventory/client.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.93890023">
-              <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.23625255">
+              <caret line="158" column="31" selection-start-line="158" selection-start-column="31" selection-end-line="158" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -65,8 +65,8 @@
       <file leaf-file-name="clientoldie.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/inventory/clientoldie.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-18.75">
-              <caret line="58" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.625">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="11" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -154,9 +154,9 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/inventory/clientoldie.html.erb" />
         <option value="$PROJECT_DIR$/app/models/inventory.rb" />
         <option value="$PROJECT_DIR$/app/controllers/inventory_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/inventory/clientoldie.html.erb" />
         <option value="$PROJECT_DIR$/app/views/inventory/client.html.erb" />
       </list>
     </option>
@@ -573,7 +573,13 @@
       <option name="project" value="LOCAL" />
       <updated>1449290089703</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Fixed table">
+      <created>1449351940099</created>
+      <option name="number" value="00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1449351940099</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -635,7 +641,8 @@
     <MESSAGE value="Created Skeleton structure in client.html + added Bootstrap gem (run &quot;bundle install&quot; before &quot;rails server&quot;) + set up controllers (run &quot;localhost:3000/inventory/client.html&quot; in browser window)" />
     <MESSAGE value="Functionality changes" />
     <MESSAGE value="Trying to add Pagination support" />
-    <option name="LAST_COMMIT_MESSAGE" value="Trying to add Pagination support" />
+    <MESSAGE value="Fixed table" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed table" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -991,14 +998,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/inventory/clientoldie.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-18.75">
-          <caret line="58" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1007,10 +1006,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/inventory/clientoldie.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="11" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inventory/client.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.93890023">
-          <caret line="223" column="0" selection-start-line="223" selection-start-column="0" selection-end-line="223" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.23625255">
+          <caret line="158" column="31" selection-start-line="158" selection-start-column="31" selection-end-line="158" selection-end-column="31" />
           <folding />
         </state>
       </provider>
