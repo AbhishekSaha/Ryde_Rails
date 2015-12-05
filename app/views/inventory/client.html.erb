@@ -196,6 +196,15 @@
 
 
       <style type>
+      	select option {
+			background:gray;
+      	}
+
+      	input {
+      		background-color:gray;
+      		border-color:gray;
+      	}
+
         body {
           background-color: gray;
         }
@@ -253,7 +262,7 @@
                   <td><%= car.COLOR %></td>
                   <td><%= car.MPG %></td>
                   <td>
-                    <button name="<%= car.VIN.to_s %>" class="rentbutton" type="button">Rent</button>
+                    <button style="background-color:gray;border-color:gray" name="<%= car.VIN.to_s %>" class="rentbutton" type="button">Rent</button>
                   </td>
                 </tr>
                 <tr>
