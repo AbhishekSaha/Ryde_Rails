@@ -18,11 +18,41 @@ class InventoryController < ApplicationController
 
   def clientoldie
     @inventorys = Inventory.all
+
     if params['commit'].present?
 
       inventory = {}
-      inventory[:make] = params['make']
-      inventory[:type] = params['type']
+      inventory[:make] = params['make'] unless params['make'].blank?
+      inventory[:type] = params['type'] unless params['type'].blank?
+
+
+      caropts = {}
+      caropts[:LEATHER] = "Yes" unless params['leather'].blank?
+      caropts[:FWD] = "Yes" unless params['fourwheeldrive'].blank?
+      caropts[:FOGLIGHTS] = "Yes" unless params['foglights'].blank?
+      caropts[:SURROUND] = "Yes" unless params['surround'].blank?
+      caropts[:DVD] = "Yes" unless params['dvd'].blank?
+
+      @VINS = Inventory.all.where(:INVENTORY => inventory).select("VIN")
+
+      if caropts.blank?
+        @inventorys = Inventory.where(:inventories => inventory)
+      else
+        @inventorys = Inventory.joins("INNER JOIN caroptions ON inventories.VIN = caroptions.VIN")
+                          .where(:inventories => inventory, :caroptions => caropts)
+      end
+    end
+
+  end
+
+  def client
+    @inventorys = Inventory.all
+
+    if params['commit'].present?
+
+      inventory = {}
+      inventory[:make] = params['make'] unless params['make'].blank?
+      inventory[:type] = params['type'] unless params['type'].blank?
 
 
       caropts = {}

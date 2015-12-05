@@ -1,13 +1,13 @@
 <%= form_tag({controller: "inventory", action: "client"}, method: "get", class: "form-inline", remote: false) do %>
     <div class="form-group">
       <%= label_tag("Make") %>
-      <%= select_tag("make", '<option>Toyota</option><option>Honda</option><option>Ford</option><option>Nissan</option><option>Tesla</option><option>BMW</option><option>Volkswagen</option>'.html_safe, :class => "form-control") %>
+      <%= select_tag("make", '<option></option><option>Toyota</option><option>Honda</option><option>Ford</option><option>Nissan</option><option>Tesla</option><option>BMW</option><option>Volkswagen</option>'.html_safe, :class => "form-control") %>
     </div>
     <br/>
 
     <div class="form-group">
       <%= label_tag(:type, "Type") %>
-      <%= select_tag("type", '<option>Sedan</option><option>SUV</option><option>Electric</option><option>Coupe</option><option>Hatchback</option><option>Luxury</option><option>Truck</option><option>Sports</options>'.html_safe, :class => "form-control") %>
+      <%= select_tag("type", '<option></option><option>Sedan</option><option>SUV</option><option>Electric</option><option>Coupe</option><option>Hatchback</option><option>Luxury</option><option>Truck</option><option>Sports</options>'.html_safe, :class => "form-control") %>
     </div>
     <br/>
 
@@ -30,12 +30,38 @@
 <% end %>
 
 
-<style>
+<style type>
   body {
     background-color: gray;
   }
+
+  #table-wrapper {
+    position: relative;
+  }
+
+  #table-scroll {
+    height: 400px;
+    overflow: auto;
+    margin-top: 20px;
+  }
+
+  #table-wrapper table {
+    width: 100%;
+  }
+
+  #table-wrapper table thead th .text {
+    position: absolute;
+    top: -20px;
+    z-index: 2;
+    height: 20px;
+    width: 35%;
+    border: 1px solid white;
+  }
 </style>
-<table id="queryresults" class="table" bgcolor="#00FF00">
+
+<div id="table-wrapper">
+  <div id="table-scroll">
+    <table id="queryresults" bgcolor="#00FF00">
   <thead>
   <tr>
     <th></th>
@@ -71,7 +97,7 @@
   <% end %>
 </tbody>
 </table>
-
+  </div>
 </div>
 <script>
   
