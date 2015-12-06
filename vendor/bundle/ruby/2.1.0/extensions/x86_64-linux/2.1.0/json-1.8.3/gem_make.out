@@ -1,0 +1,14 @@
+current directory: /home/ajay/Google Drive/workspace/Ryde_Rails/vendor/bundle/ruby/2.1.0/gems/json-1.8.3/ext/json
+/usr/bin/ruby2.1 -r ./siteconf20151205-28645-mdrzoi.rb extconf.rb
+creating Makefile
+
+current directory: /home/ajay/Google Drive/workspace/Ryde_Rails/vendor/bundle/ruby/2.1.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" clean
+
+current directory: /home/ajay/Google Drive/workspace/Ryde_Rails/vendor/bundle/ruby/2.1.0/gems/json-1.8.3/ext/json
+make "DESTDIR="
+make: Nothing to be done for 'all'.
+
+current directory: /home/ajay/Google Drive/workspace/Ryde_Rails/vendor/bundle/ruby/2.1.0/gems/json-1.8.3/ext/json
+make "DESTDIR=" install
+installing default libraries
