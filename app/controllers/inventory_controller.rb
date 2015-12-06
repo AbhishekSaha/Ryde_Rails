@@ -3,6 +3,13 @@ class InventoryController < ApplicationController
   require 'json'
   layout 'application'
 
+  def deleteVIN
+
+    puts(params['VIN'])
+    Inventory.destroy(params['VIN'])
+    redirect_to action: :client
+  end
+
   def lookupVIN
 
     lops = Caroption.where("VIN = " + "'" + params['VIN']+ "'")

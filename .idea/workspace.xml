@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4da18e48-8c46-4958-b079-6c7344a998f2" name="Default" comment="Updated Distance">
+    <list default="true" id="4da18e48-8c46-4958-b079-6c7344a998f2" name="Default" comment="Done.">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/inventory_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/inventory_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/inventory/client.html.erb" afterPath="$PROJECT_DIR$/app/views/inventory/client.html.erb" />
     </list>
     <ignored path="Ryde.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,9 +52,12 @@
       <file leaf-file-name="client.html.erb" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/inventory/client.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.54989815">
-              <caret line="243" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.5417515">
+              <caret line="241" column="37" selection-start-line="241" selection-start-column="37" selection-end-line="241" selection-end-column="37" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#td#9;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1449367260000" expanded="true" signature="7242:7257" placeholder="{&quot;type&quot;: 'GET'...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,9 +66,9 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/inventory_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="20" />
+              <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
               <folding>
-                <marker date="1449362640000" expanded="true" signature="1025:1170" placeholder="if ... end" />
+                <marker date="1449367260000" expanded="true" signature="1142:1287" placeholder="if ... end" />
               </folding>
             </state>
           </provider>
@@ -119,8 +120,8 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="23" />
+    <option name="x" value="-13" />
+    <option name="y" value="176" />
     <option name="width" value="1440" />
     <option name="height" value="852" />
   </component>
@@ -549,14 +550,38 @@
       <option name="project" value="LOCAL" />
       <updated>1449360190732</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="FUCKING SUCKING DICK">
+      <created>1449363211189</created>
+      <option name="number" value="00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1449363211189</updated>
+    </task>
+    <task id="LOCAL-00009" summary="THROTTLING SHREE">
+      <created>1449363303191</created>
+      <option name="number" value="00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1449363303191</updated>
+    </task>
+    <task id="LOCAL-00010" summary="added miles">
+      <created>1449363381067</created>
+      <option name="number" value="00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1449363381067</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Done.">
+      <created>1449367260938</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1449367260938</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="23" width="1440" height="852" extended-state="6" />
-    <editor active="false" />
+    <frame x="-13" y="176" width="1440" height="852" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24305555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32880098" sideWeight="0.49444443" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32880098" sideWeight="0.5138889" order="7" side_tool="true" content_ui="tabs" />
@@ -613,7 +638,11 @@
     <MESSAGE value="Trying to add Pagination support" />
     <MESSAGE value="Fixed table" />
     <MESSAGE value="Updated Distance" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated Distance" />
+    <MESSAGE value="FUCKING SUCKING DICK" />
+    <MESSAGE value="THROTTLING SHREE" />
+    <MESSAGE value="added miles" />
+    <MESSAGE value="Done." />
+    <option name="LAST_COMMIT_MESSAGE" value="Done." />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -661,7 +690,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <marker date="1449362640000" expanded="true" signature="1025:1170" placeholder="if ... end" />
+            <marker date="1449367260000" expanded="true" signature="1142:1287" placeholder="if ... end" />
           </folding>
         </state>
       </provider>
@@ -734,7 +763,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="8" column="3" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
           <folding>
-            <marker date="1449362640000" expanded="true" signature="1025:1170" placeholder="if ... end" />
+            <marker date="1449367260000" expanded="true" signature="1142:1287" placeholder="if ... end" />
           </folding>
         </state>
       </provider>
@@ -800,7 +829,7 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="25" selection-start-line="0" selection-start-column="25" selection-end-line="0" selection-end-column="25" />
           <folding>
-            <marker date="1449362640000" expanded="true" signature="1025:1170" placeholder="if ... end" />
+            <marker date="1449367260000" expanded="true" signature="1142:1287" placeholder="if ... end" />
           </folding>
         </state>
       </provider>
@@ -978,18 +1007,21 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/inventory_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="8" selection-start-line="68" selection-start-column="8" selection-end-line="68" selection-end-column="20" />
+          <caret line="9" column="31" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
           <folding>
-            <marker date="1449362640000" expanded="true" signature="1025:1170" placeholder="if ... end" />
+            <marker date="1449367260000" expanded="true" signature="1142:1287" placeholder="if ... end" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/inventory/client.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54989815">
-          <caret line="243" column="54" selection-start-line="0" selection-start-column="0" selection-end-line="337" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.5417515">
+          <caret line="241" column="37" selection-start-line="241" selection-start-column="37" selection-end-line="241" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#td#9;n#tr#0;n#tbody#0;n#table#0;n#div#0;n#div#3;n#div#0;n#div#0;n#section#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1449367260000" expanded="true" signature="7242:7257" placeholder="{&quot;type&quot;: 'GET'...}" />
+          </folding>
         </state>
       </provider>
     </entry>
