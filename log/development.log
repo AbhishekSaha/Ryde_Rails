@@ -9594,3 +9594,193 @@ Started GET "/assets/page-top.jpg" for ::1 at 2015-12-05 21:13:36 -0500
 
 
 Started GET "/assets/loading.gif" for ::1 at 2015-12-05 21:13:36 -0500
+
+
+Started GET "/inventory/client" for ::1 at 2015-12-05 21:31:46 -0500
+  [1m[36mActiveRecord::SchemaMigration Load (10.4ms)[0m  [1mSELECT `schema_migrations`.* FROM `schema_migrations`[0m
+Processing by InventoryController#client as HTML
+  [1m[35mInventory Load (70.7ms)[0m  SELECT `inventories`.* FROM `inventories`  ORDER BY DISTANCE
+  Rendered inventory/client.html.erb within layouts/application (591.8ms)
+Completed 200 OK in 923ms (Views: 809.7ms | ActiveRecord: 97.5ms)
+
+
+Started GET "/assets/application.self-aec7f4ce635655db34c906c6d7cd7f85791992bed1dfa78a0bf94e616dc646e4.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/assets/css/bootstrap.min.self-9b52db8b6b8571058f069935252fac6d55b404168f65d084968996cf5fcc3121.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/assets/css/style.self-49b8432c472d8c0853f1908c1122de1b574eb7773628b07ee13a146cf01c9640.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/datatables.min.self-6e22e42647593e21834ac1647d7e93bb1d03d97b76ccc8d7f96906c85c0c9698.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/assets/css/font-awesome.min.self-bc161b71185c6c05f037d2f756611471eda3ce4be07da8704a7481ee50ddc761.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/client.self-d62ba0a5885117f3bbb08882ec53d0ceacfbb61318774e6e5381e17a1ff1cb3b.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/font-awesome.min.self-bc161b71185c6c05f037d2f756611471eda3ce4be07da8704a7481ee50ddc761.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/style.self-7a2470aa1922e7e7e24b08dea3736b815964380ff1de2f56008911e768ab8aeb.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/welcome_page.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/bootstrap.min.css" for ::1 at 2015-12-05 21:31:48 -0500
+
+ActionController::RoutingError (No route matches [GET] "/assets/bootstrap.min.css"):
+  vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/bundle/gems/web-console-2.2.1/lib/web_console/middleware.rb:39:in `call'
+  vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  vendor/bundle/gems/railties-4.2.4/lib/rails/rack/logger.rb:38:in `call_app'
+  vendor/bundle/gems/railties-4.2.4/lib/rails/rack/logger.rb:20:in `block in call'
+  vendor/bundle/gems/activesupport-4.2.4/lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  vendor/bundle/gems/activesupport-4.2.4/lib/active_support/tagged_logging.rb:26:in `tagged'
+  vendor/bundle/gems/activesupport-4.2.4/lib/active_support/tagged_logging.rb:68:in `tagged'
+  vendor/bundle/gems/railties-4.2.4/lib/rails/rack/logger.rb:20:in `call'
+  vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  vendor/bundle/gems/activesupport-4.2.4/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  vendor/bundle/gems/railties-4.2.4/lib/rails/engine.rb:518:in `call'
+  vendor/bundle/gems/railties-4.2.4/lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/abhisheksaha/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /Users/abhisheksaha/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /Users/abhisheksaha/.rbenv/versions/2.2.3/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (0.7ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (9.5ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered vendor/bundle/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (95.7ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (60.2ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered vendor/bundle/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (139.3ms)
+
+
+Started GET "/assets/font-awesome.min.css" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/style.css" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-12-05 21:31:48 -0500
+
+
+Started GET "/assets/bootstrap/affix.self-d2b642d8fbfc1d7041e2edefd66683ada567a980789dcd6f94fddda0b33408b5.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/alert.self-a29e91e8cd3ddaba9bbc466901d53ec2127e9256b9b941905d525a3a716bd1a5.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/button.self-a6cb16785434acb365ae426aef9f1fce05ed553cae7a965e4471c3da71509175.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/carousel.self-57eb8422043cf0a85b7a9dc6843916eb0a3e35b419c7798a5eb254b918997631.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/collapse.self-7dc8bfbc2fbfabd2bad62c58ff8ffeaf8f20fb87c7ca6cd35f06d4dc19632587.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/dropdown.self-9314126777c6be5443e37ea7f7967d7914d72b3e60449ba50edc967446373059.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/tab.self-122235057fbd4c6c7da377d59dc58f47b44cb1088a2e38e6ee6ce9d8ac29a26a.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/transition.self-09ff30b1e8a93d1f7728b9855f55d9c9d8d5734c8861e0d8139994e50944572a.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/scrollspy.self-a155b9d4b2f978905f0326c0f6635e1134fe91c6bfbfcbad079fa24a9fef2b0e.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/modal.self-72f95ffa1071297725a9ac91989693d56d1abf23f441a47455073b0da2857a5b.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/tooltip.self-11cf547be953f25f511cec668f6690473fd97b2f65502e4032f4030999a3f0c3.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap/popover.self-77d8e3a2499c1104ef146396a68b82469ee2bdb365199b874694698d10405e9a.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/bootstrap.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/functions.self-bd4be860d4d497a270f0ed5a2a3b371157aa6f3ae48409b683832b5e5a71969a.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/html5shiv.self-d55410eeb0d1e50b9558b594560e362529c60f3d70f808efe63dc16137b0226a.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.self-e60903d98b8d227294364e4f85fb15d3119a32495e6e3aa29f188f7264bd9f0e.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.self-09c5e7fb76ba8ba6f424619aad665bbd02d0f6154196f5163613639d90bd649c.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/jquery.tablesorter.min.self-b038bcf4e9ddb5f60c93e49bfe7aeeaf40f8fcc2fa753ee56d1abe2bcb89a016.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.self-0ce62ba42b83402485c1a5ecfa129fbf69a789cc92d4f80336c3b48ba76c7173.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/plugins.self-e9c0fc0328b4690bcc8170637a65d5fcc217ab11993844a412ebb74e2568c227.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/welcome_page.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/about-us.jpg" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/assets/images/pattern.png" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/page-top.jpg" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/loading.gif" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/plugins.js" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/modernizr-2.8.0.min.js" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/jquery-2.1.0.min.js" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/jquery.ajaxchimp.min.js" for ::1 at 2015-12-05 21:31:49 -0500
+
+
+Started GET "/assets/functions.js" for ::1 at 2015-12-05 21:31:50 -0500
