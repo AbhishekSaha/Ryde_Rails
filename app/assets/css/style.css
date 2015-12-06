@@ -465,7 +465,7 @@ a:focus{
 }
 
 #page-top {
-	background: url("http://i.imgur.com/s369l0p.jpg");
+	/*background: url("http://i.imgur.com/s369l0p.jpg");*/
 	background-size: 100% 100%;
 }
 /* 4 - Page Top Section End
@@ -476,7 +476,7 @@ a:focus{
 /* 5 - About Us Section
 ---------------------------------------------------------------------- */
 #about {
-	background: url("http://i.imgur.com/7r8623g.jpg");
+	/*background: url("http://i.imgur.com/7r8623g.jpg");*/
 }
 
 /*.pattern{
