@@ -225,13 +225,23 @@
       </div>
 
       <script>
+        document.location.hash = "<%= @div.to_s %>"
+      </script>
+      <script>
+        document.getElementById('make').value = '<%= @mako.to_s%>';
+        document.getElementById('type').value = '<%= @typuh.to_s %>';
+      </script>
 
-        $('.rentbutton').click(function () {
+      <script>
 
-        });
 
         $(function () {
-          document.location.hash = "<%= @div.to_s %>"
+
+          $("#leather").prop('checked', <%= @leather.to_i %>);
+          $('#foglights').prop('checked', <%= @foglights.to_i %>);
+          $("#surround").prop('checked', <%= @surround.to_i %>);
+          $('#fourwheeldrive').prop('checked', <%= @FWD.to_i %>);
+          $('#dvd').prop('checked', <%= @DVD.to_i %>);
           $("td[colspan=9]").hide();
           $("table").click(function (event) {
             event.stopPropagation();

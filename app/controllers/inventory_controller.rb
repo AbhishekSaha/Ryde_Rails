@@ -53,33 +53,56 @@ class InventoryController < ApplicationController
     @div = "#page-top"
     @inventorys = Inventory.order("DISTANCE")
 
+
     if params['commit'].present?
       @div = "#about"
       inventory = {}
       inventory[:make] = params['make'] unless params['make'].blank?
       inventory[:type] = params['type'] unless params['type'].blank?
-
+      @mako = params['make']
+      @typuh = params['type']
 
       caropts = {}
-      caropts[:LEATHER] = "Yes" unless params['leather'].blank?
-      caropts[:FWD] = "Yes" unless params['fourwheeldrive'].blank?
-      caropts[:FOGLIGHTS] = "Yes" unless params['foglights'].blank?
-      caropts[:SURROUND] = "Yes" unless params['surround'].blank?
-      caropts[:DVD] = "Yes" unless params['dvd'].blank?
+      if params['leather'].present?
+        caropts[:LEATHER] = "Yes"
+        @leather = 1
+      end
+
+      if params['fourwheeldrive'].present?
+        caropts[:FWD] = "Yes"
+        @FWD = 1
+      end
+
+      if params['foglights'].present?
+        caropts[:FOGLIGHTS] = "Yes"
+        @foglights = 1
+      end
+
+      if params['surround'].present?
+        caropts[:LEATHER] = "Yes"
+        @surround = 1
+      end
+
+      if params['dvd'].present?
+        caropts[:DVD] = "Yes"
+        @DVD = 1
+      end
 
       @VINS = Inventory.all.where(:INVENTORY => inventory).select("VIN")
 
-      if caropts.blank? && invetonry.blank?
-        @inventorys = Inventory.order("DISTANCE")
+      if caropts.blank? && inventory.blank?
+        @inventorys = Inventory.order("distance")
       elsif caropts.blank?
         @inventorys = Inventory.where(:inventories => inventory).order("Distance")
       elsif inventory.blank?
         @inventorys = Inventory.joins("INNER JOIN caroptions ON inventories.VIN = caroptions.VIN")
-                          .where(:caroptions => caropts)
+                          .where(:caroptions => caropts).order("Distance")
       else
         @inventorys = Inventory.joins("INNER JOIN caroptions ON inventories.VIN = caroptions.VIN")
-                          .where(:inventories => inventory, :caroptions => caropts)
+                          .where(:inventories => inventory, :caroptions => caropts).order("Distance")
       end
+
+
     end
 
   end
