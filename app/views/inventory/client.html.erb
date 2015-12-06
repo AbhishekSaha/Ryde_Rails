@@ -234,6 +234,16 @@
 
       <script>
 
+        $('.rentbutton').click(function () {
+              var check = confirm("Do you wish to proceed renting this vehicle?");
+              if (check) {
+                var $target = $(event.target);
+                var b = "deleteVIN?utf8=✓&VIN=".concat($target.closest("tr").attr('id'))
+                window.open(b, "_self");
+              }
+            }
+        );
+
 
         $(function () {
 
