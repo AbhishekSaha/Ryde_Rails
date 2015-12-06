@@ -3,7 +3,7 @@ branch-defaults:
     environment: ryde-rails-env
 global:
   application_name: Rails_Ryde
-  default_ec2_keyname: aws-eb
+  default_ec2_keyname: def
   default_platform: Ruby 2.2 (Puma)
   default_region: us-east-1
   profile: eb-cli
